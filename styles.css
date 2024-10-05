@@ -1,0 +1,104 @@
+/* Власні стилі */
+
+/* Градиентный фон для всего тела страницы */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #6b73ff 0%, #000dff 74%);
+    color: #333;
+}
+
+/* Стили навигации */
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ddd;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28%255, %255, %255, 0.9%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/ %3E%3C/svg%3E");
+}
+
+/* Стили карусели */
+.carousel-item {
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    color: #fff;
+}
+
+/* Основной контент */
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+/* Футер */
+footer {
+    background: #000dff;
+}
+
+footer h5 {
+    font-weight: bold;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #ddd;
+}
+
+.bg-secondary {
+    background-color: #6b73ff !important;
+}
+
+/* Анимация при прокрутке */
+[data-aos] {
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-duration: 1s;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+[data-aos="fade-up"] {
+    transform: translateY(20px);
+}
+
+[data-aos="fade-down"] {
+    transform: translateY(-20px);
+}
